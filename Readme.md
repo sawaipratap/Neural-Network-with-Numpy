@@ -18,6 +18,7 @@ $$\sigma(x) = \frac{1}{1 + e^{-x}}$$
 <br>
 
 The network follows the following mathematical equations:
+
 $$ H_1 = x_1 W_1 + x_2 W_2 + b_1 $$
 $$ H_2 = x_1 W_3 + x_2 W_4 + b_2 $$
 
