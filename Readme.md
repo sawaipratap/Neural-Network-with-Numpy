@@ -40,8 +40,8 @@ pip install -r requirements.txt
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/sawaipratap/Neural-Network-Implementation-using-NumPy.git 
-   cd Neural-Network-Implementation-using-NumPy
+   git clone https://github.com/sawaipratap/Neural-Network-with-Numpy.git 
+   cd Neural-Network-with-Numpy
    ```
 2. Run the Jupyter Notebook or Python script:
    ```bash
