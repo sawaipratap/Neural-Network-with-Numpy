@@ -13,7 +13,7 @@ The network consists of:
 
 ![Neural Network Architecture](./Model%20Architecture.png)
 <br><br>
-Activation Function used: **Sigmoid** <br>
+Activation Function used: **Sigmoid** <br><br>
 $$\sigma(x) = \frac{1}{1 + e^{-x}}$$
 <br>
 
