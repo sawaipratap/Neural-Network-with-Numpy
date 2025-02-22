@@ -13,7 +13,7 @@ The network consists of:
 
 ![Neural Network Architecture](./Model%20Architecture.png)
 <br><br>
-Activation Function used: **Sigmoid** <br><br>
+Activation Function used: **Sigmoid**
 $$\sigma(x) = \frac{1}{1 + e^{-x}}$$
 <br>
 
@@ -28,6 +28,29 @@ $$ y_{pred} = \sigma(H_1 W_5 + H_2 W_6 + b_3) $$
 $$ y_{pred}= \frac{1}{1 + e^{-(H_1 W_5 + H_2 W_6 + b_3)}} $$
 
 <br><br>
+
+## Backpropagation Algorithm
+
+Backpropagation is a fundamental algorithm for training neural networks, enabling them to adjust weights and biases to minimize prediction errors. This implementation utilizes backpropagation to efficiently compute gradients and update parameters.
+
+### How Backpropagation Works
+1.	**Forward Pass:** Compute the output of the network by passing input data through each layer.
+2.	**Compute Loss:** Calculate the discrepancy between the predicted output and the actual target using a loss function.
+3.	**Backward Pass:** Propagate the error backward through the network to compute gradients of the loss with respect to each weight and bias.
+4.	**Update Parameters:** Adjust the weights and biases using the computed gradients, typically with an optimization algorithm like stochastic gradient descent.
+
+### Mathematical Formulation
+
+For each neuron, the weight update rule is defined as:
+
+$$ w_{ij} \leftarrow w_{ij} - \eta \frac{\partial E}{\partial w_{ij}} $$
+
+
+
+The partial derivative ￼ represents the gradient of the loss with respect to the weight, indicating the direction and magnitude of the weight adjustment needed to reduce the error.
+
+<br>
+
 ## Installation
 
 Ensure you have Python installed along with all the Required Dependencies. <br>You can install dependencies using:
@@ -40,7 +63,7 @@ pip install -r requirements.txt
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/sawaipratap/Neural-Network-with-Numpy.git 
+   git clone https://github.com/sawaipratap/Neural-Network-with-Numpy 
    cd Neural-Network-with-Numpy
    ```
 2. Run the Jupyter Notebook or Python script:
